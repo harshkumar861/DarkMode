@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C09F28BF2152121649F7961 /* Pods_DarkMode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1E9413954FCC85555DD4D4 /* Pods_DarkMode.framework */; };
+		1844045223E158730004E083 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844045123E158730004E083 /* DashboardVC.swift */; };
+		1844045723E158E20004E083 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844045623E158E20004E083 /* Models.swift */; };
+		1844045923E159070004E083 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844045823E159070004E083 /* DashboardVM.swift */; };
 		18CE626323C65EC500E18F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE626223C65EC500E18F75 /* AppDelegate.swift */; };
 		18CE626523C65EC500E18F75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE626423C65EC500E18F75 /* SceneDelegate.swift */; };
 		18CE626723C65EC500E18F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE626623C65EC500E18F75 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		178E4DE2DA775BEB65D109EA /* Pods-DarkMode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode.debug.xcconfig"; path = "Target Support Files/Pods-DarkMode/Pods-DarkMode.debug.xcconfig"; sourceTree = "<group>"; };
+		1844045123E158730004E083 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		1844045623E158E20004E083 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1844045823E159070004E083 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
 		18CE625F23C65EC500E18F75 /* DarkMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CE626223C65EC500E18F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CE626423C65EC500E18F75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		18CE626B23C65EEA00E18F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CE626E23C65EEA00E18F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CE627023C65EEA00E18F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A1E9413954FCC85555DD4D4 /* Pods_DarkMode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkMode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3956B423690AED53BAE9281 /* Pods-DarkMode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode.release.xcconfig"; path = "Target Support Files/Pods-DarkMode/Pods-DarkMode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C09F28BF2152121649F7961 /* Pods_DarkMode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		116C74CD44BD4927855506A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				178E4DE2DA775BEB65D109EA /* Pods-DarkMode.debug.xcconfig */,
+				A3956B423690AED53BAE9281 /* Pods-DarkMode.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1844045323E1588C0004E083 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1844045623E158E20004E083 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1844045423E158960004E083 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1844045123E158730004E083 /* DashboardVC.swift */,
+				18CE626623C65EC500E18F75 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1844045523E158A10004E083 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1844045823E159070004E083 /* DashboardVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		18CE625623C65EC400E18F75 = {
 			isa = PBXGroup;
 			children = (
 				18CE626123C65EC500E18F75 /* DarkMode */,
 				18CE626023C65EC500E18F75 /* Products */,
+				116C74CD44BD4927855506A8 /* Pods */,
+				1C668239E0BF0AB8660D53BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +105,23 @@
 			children = (
 				18CE626223C65EC500E18F75 /* AppDelegate.swift */,
 				18CE626423C65EC500E18F75 /* SceneDelegate.swift */,
-				18CE626623C65EC500E18F75 /* ViewController.swift */,
+				1844045323E1588C0004E083 /* Model */,
+				1844045423E158960004E083 /* View */,
+				1844045523E158A10004E083 /* ViewModel */,
 				18CE626823C65EC500E18F75 /* Main.storyboard */,
 				18CE626B23C65EEA00E18F75 /* Assets.xcassets */,
 				18CE626D23C65EEA00E18F75 /* LaunchScreen.storyboard */,
 				18CE627023C65EEA00E18F75 /* Info.plist */,
 			);
 			path = DarkMode;
+			sourceTree = "<group>";
+		};
+		1C668239E0BF0AB8660D53BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A1E9413954FCC85555DD4D4 /* Pods_DarkMode.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18CE627323C65EEA00E18F75 /* Build configuration list for PBXNativeTarget "DarkMode" */;
 			buildPhases = (
+				B54A058F5FA948B41C82EBB0 /* [CP] Check Pods Manifest.lock */,
 				18CE625B23C65EC500E18F75 /* Sources */,
 				18CE625C23C65EC500E18F75 /* Frameworks */,
 				18CE625D23C65EC500E18F75 /* Resources */,
+				885B1121C6F63F2B43157E4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +192,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		885B1121C6F63F2B43157E4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DarkMode/Pods-DarkMode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DarkMode/Pods-DarkMode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DarkMode/Pods-DarkMode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54A058F5FA948B41C82EBB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DarkMode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18CE625B23C65EC500E18F75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18CE626723C65EC500E18F75 /* ViewController.swift in Sources */,
+				1844045223E158730004E083 /* DashboardVC.swift in Sources */,
 				18CE626323C65EC500E18F75 /* AppDelegate.swift in Sources */,
+				1844045923E159070004E083 /* DashboardVM.swift in Sources */,
 				18CE626523C65EC500E18F75 /* SceneDelegate.swift in Sources */,
+				1844045723E158E20004E083 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +386,7 @@
 		};
 		18CE627423C65EEA00E18F75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 178E4DE2DA775BEB65D109EA /* Pods-DarkMode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +405,7 @@
 		};
 		18CE627523C65EEA00E18F75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3956B423690AED53BAE9281 /* Pods-DarkMode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
